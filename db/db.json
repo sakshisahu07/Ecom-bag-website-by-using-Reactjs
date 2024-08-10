@@ -1,0 +1,109 @@
+
+
+
+
+{
+    "product":[
+        {
+            "id":1,
+            "name":"babyshirt",
+            "description":"This is for babiesss",
+            "price":300,
+            "category":"baby",
+            "images":"c1.webp"
+            
+        },
+        {
+            "id":1,
+            "name":"babyshirt",
+            "description":"This is for babiesss",
+            "price":300,
+            "category":"baby",
+            "images":"c2.webp"
+            
+        }, {
+            "id":1,
+            "name":"babyshirt",
+            "description":"This is for babiesss",
+            "price":300,
+            "category":"baby",
+            "images":"c3.webp"
+            
+        }, {
+            "id":1,
+            "name":"babyshirt",
+            "description":"This is for babiesss",
+            "price":300,
+            "category":"baby",
+            "images":"c4.webp"
+            
+        }, {
+            "id":1,
+            "name":"babyshirt",
+            "description":"This is for babiesss",
+            "price":300,
+            "category":"baby",
+            "images":"c5.webp"
+            
+        }, {
+            "id":1,
+            "name":"babyshirt",
+            "description":"This is for babiesss",
+            "price":300,
+            "category":"baby",
+            "images":"c6.webp"
+            
+        }, {
+            "id":1,
+            "name":"babyshirt",
+            "description":"This is for babiesss",
+            "price":300,
+            "category":"baby",
+            "images":"c7.webp"
+            
+        }, {
+            "id":1,
+            "name":"babyshirt",
+            "description":"This is for babiesss",
+            "price":300,
+            "category":"baby",
+            "images":"c8.webp"
+            
+        }, {
+            "id":1,
+            "name":"babyshirt",
+            "description":"This is for babiesss",
+            "price":300,
+            "category":"baby",
+            "images":"c9.webp"
+            
+        },
+        {
+            "id":1,
+            "name":"babyshirt",
+            "description":"This is for babiesss",
+            "price":300,
+            "category":"baby",
+            "images":"c10.webp"
+            
+        },
+        {
+            "id":1,
+            "name":"babyshirt",
+            "description":"This is for babiesss",
+            "price":300,
+            "category":"baby",
+            "images":"c11.avif"
+            
+        },
+        {
+            "id":1,
+            "name":"babyshirt",
+            "description":"This is for babiesss",
+            "price":300,
+            "category":"baby",
+            "images":"c12.avif"
+            
+        }
+    ]
+}
