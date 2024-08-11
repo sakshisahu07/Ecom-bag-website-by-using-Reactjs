@@ -1,20 +1,17 @@
 
-
-
-
-
-
 import Carousel from 'react-bootstrap/Carousel';
-
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
+import { useDispatch } from 'react-redux';
+import { addtoCart } from './CartSlice';
 
 const Home=()=>{
     //  ======================== Add To Cart Functionality ============================
 
     const [mydata,setMydata]=useState([]);
+    const dispatch= useDispatch();
 
     const loadData=()=>{
         let api="http://localhost:3000/product";
@@ -27,6 +24,14 @@ const Home=()=>{
         loadData();
     },[])
 
+
+    const DataCart=(pid, nm, img, desc, price)=>{
+
+      dispatch(addtoCart({id: pid, name:nm, image:img, description:desc, price:price}))
+ 
+   }
+
+
     const ans=mydata.map((key)=>{
         return(
             <>
@@ -37,7 +42,8 @@ const Home=()=>{
       <Card.Text>
        {key.description}
       </Card.Text>
-      <Button variant="primary">Add To Cart</Button>
+       <Button variant="primary" 
+        onClick={()=>{DataCart(key.id, key.name, key.images, key.description, key.price)}}>Add to Cart</Button>
     </Card.Body>
   </Card>
             </>
@@ -96,19 +102,12 @@ const Home=()=>{
          </Carousel.Caption>
        </Carousel.Item>
      </Carousel>
-
-
-
-    
-  
-
     {/* ================================= Add To Cart ================================== */}
 
     { <div style={{display:"flex",justifyContent:"space-between",flexWrap:"wrap", width:"90%",margin:"auto"}}>
          {ans}
     </div>   
-        }
-
+  }
         </>
     )
 }

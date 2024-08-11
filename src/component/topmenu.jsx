@@ -3,11 +3,13 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 
 import { FaShoppingBag } from "react-icons/fa";
-
+import { useSelector } from 'react-redux';
 
 
 
 const Topmenu=()=>{
+    const myCart= useSelector((state)=>state.mycart.cart);
+  const dataLength= myCart.length;
     return(
         <>
         <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
@@ -29,10 +31,10 @@ const Topmenu=()=>{
            
             <FaShoppingBag />
 
-            <span id="tokri"></span>
+            <span id="tokri">{dataLength}</span>
             </Nav.Link>
             <Nav.Link eventKey={2} href="#memes">
-              Dank memes
+              
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
