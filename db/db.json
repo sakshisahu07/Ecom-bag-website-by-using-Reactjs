@@ -6,103 +6,103 @@
     "product":[
         {
             "id":1,
-            "name":"babyshirt",
-            "description":"This is for babiesss",
-            "price":300,
-            "category":"baby",
-            "images":"c1.webp"
+            "name":"Makeup Background bag",
+            "description":"This is for Makeup background bag for putting makeup items",
+            "price":570,
+            "category":"black bag",
+            "images":"c1.jpg"
             
         },
         {
-            "id":1,
-            "name":"babyshirt",
-            "description":"This is for babiesss",
-            "price":300,
-            "category":"baby",
-            "images":"c2.webp"
+            "id":2,
+            "name":"Ecobag",
+            "description":"This is eco bag for carring normal things",
+            "price":280,
+            "category":"White bag",
+            "images":"c2.jpg"
             
         }, {
-            "id":1,
-            "name":"babyshirt",
-            "description":"This is for babiesss",
-            "price":300,
-            "category":"baby",
-            "images":"c3.webp"
+            "id":3,
+            "name":"Leather bag",
+            "description":"This is very stylish bag of black color for girls",
+            "price":800,
+            "category":"black leather bag",
+            "images":"c3.jpg"
             
         }, {
-            "id":1,
-            "name":"babyshirt",
-            "description":"This is for babiesss",
-            "price":300,
-            "category":"baby",
-            "images":"c4.webp"
+            "id":4,
+            "name":"Side bag",
+            "description":"This is very fancy bag its always give elegant look ",
+            "price":400,
+            "category":"brown side bag",
+            "images":"c4.jpg"
             
         }, {
-            "id":1,
-            "name":"babyshirt",
-            "description":"This is for babiesss",
+            "id":5,
+            "name":"hand bag",
+            "description":"This is good for travelling",
             "price":300,
-            "category":"baby",
-            "images":"c5.webp"
+            "category":"brown bag",
+            "images":"c5.jpg"
             
         }, {
-            "id":1,
-            "name":"babyshirt",
-            "description":"This is for babiesss",
-            "price":300,
-            "category":"baby",
-            "images":"c6.webp"
+            "id":6,
+            "name":"party wear bag",
+            "description":"This is best for party and function",
+            "price":900,
+            "category":"black party wear bag",
+            "images":"c6.jpg"
             
         }, {
-            "id":1,
-            "name":"babyshirt",
-            "description":"This is for babiesss",
-            "price":300,
-            "category":"baby",
-            "images":"c7.webp"
+            "id":7,
+            "name":"Wallpaper bag",
+            "description":"This is for wall decorative bag and flower bag",
+            "price":750,
+            "category":"Flower bag",
+            "images":"c7.jpg"
             
         }, {
-            "id":1,
-            "name":"babyshirt",
-            "description":"This is for babiesss",
-            "price":300,
-            "category":"baby",
-            "images":"c8.webp"
+            "id":8,
+            "name":"pink bag",
+            "description":"This is beautiful pink bag for casual",
+            "price":900,
+            "category":"pink bag",
+            "images":"c8.jpg"
             
         }, {
-            "id":1,
-            "name":"babyshirt",
+            "id":9,
+            "name":"pink bag",
             "description":"This is for babiesss",
-            "price":300,
-            "category":"baby",
-            "images":"c9.webp"
+            "price":550,
+            "category":"baby pink bag",
+            "images":"c9.jpg"
             
         },
         {
-            "id":1,
-            "name":"babyshirt",
-            "description":"This is for babiesss",
-            "price":300,
-            "category":"baby",
-            "images":"c10.webp"
+            "id":10,
+            "name":"Grey stylish bag",
+            "description":"This is grey and very stylish bag anytime you can try this",
+            "price":660,
+            "category":"grey bag",
+            "images":"c10.jpg"
             
         },
         {
-            "id":1,
-            "name":"babyshirt",
-            "description":"This is for babiesss",
-            "price":300,
-            "category":"baby",
-            "images":"c11.avif"
+            "id":11,
+            "name":"college bag",
+            "description":"This is best for the college and coaching ",
+            "price":1000,
+            "category":"pink bag",
+            "images":"c11.jpg"
             
         },
         {
-            "id":1,
-            "name":"babyshirt",
-            "description":"This is for babiesss",
-            "price":300,
-            "category":"baby",
-            "images":"c12.avif"
+            "id":12,
+            "name":"hand bag",
+            "description":"This is elegant and wonderful hand bag",
+            "price":1200,
+            "category":"grey bag",
+            "images":"c12.jpg"
             
         }
     ]

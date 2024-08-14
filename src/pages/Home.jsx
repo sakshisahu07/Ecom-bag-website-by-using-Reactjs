@@ -5,7 +5,7 @@ import Card from 'react-bootstrap/Card';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useDispatch } from 'react-redux';
-import { addtoCart } from './CartSlice';
+import {addtoCart} from '../CartSlice'
 
 const Home=()=>{
     //  ======================== Add To Cart Functionality ============================
@@ -27,7 +27,7 @@ const Home=()=>{
 
     const DataCart=(pid, nm, img, desc, price)=>{
 
-      dispatch(addtoCart({id: pid, name:nm, image:img, description:desc, price:price}))
+      dispatch(addtoCart({id: pid, name:nm, image:img, description:desc,qnty:1, price:price}))
  
    }
 
@@ -36,7 +36,7 @@ const Home=()=>{
         return(
             <>
                <Card style={{ width: '18rem', margin:"auto", margin:"20px" }}>
-    <Card.Img variant="top" src={key.images} style={{width:"100%",height:"300px"}} />
+    <Card.Img variant="top" src={"public/images/"+key.images} style={{width:"100%",height:"300px"}} />
     <Card.Body>
       <Card.Title>{key.name}</Card.Title>
       <Card.Text>
@@ -57,7 +57,7 @@ const Home=()=>{
 
    <Carousel>
       <Carousel.Item>
-        <a href="#"> <img src="public/images/8.jpg"  width="100%" height="650px" /> </a>
+        <a href="#"> <img src="public/images/j4.jpg"  width="100%" height="650px" /> </a>
         
         <Carousel.Caption>
           <h3>First slide label</h3>
@@ -65,7 +65,7 @@ const Home=()=>{
          </Carousel.Caption>
        </Carousel.Item>
        <Carousel.Item>
-         <a href="#"> <img src='public/images/9.jpg' width="100%" height="650px" /> </a>
+         <a href="#"> <img src='public/images/j3.jpg' width="100%" height="650px" /> </a>
         
          <Carousel.Caption>
            <h3>Second slide label</h3>
@@ -73,7 +73,7 @@ const Home=()=>{
         </Carousel.Caption>
        </Carousel.Item>
        <Carousel.Item>
-       <a href="#"> <img src='public/images/10.jpg' width="100%" height="650px" /> </a>
+       <a href="#"> <img src='public/images/j5.jpg' width="100%" height="650px" /> </a>
          <Carousel.Caption>
            <h3>Third slide label</h3>
            <p>
@@ -83,7 +83,7 @@ const Home=()=>{
        </Carousel.Item>
 
        <Carousel.Item>
-       <a href="#"> <img src='public/images/10.jpg' width="100%" height="650px" /> </a>
+       <a href="#"> <img src='public/images/j3.jpg' width="100%" height="650px" /> </a>
          <Carousel.Caption>
            <h3>Third slide label</h3>
            <p>
@@ -93,7 +93,7 @@ const Home=()=>{
        </Carousel.Item>
 
        <Carousel.Item>
-       <a href="#"> <img src='public/images/10.jpg' width="100%" height="650px" /> </a>
+       <a href="#"> <img src='public/images/j5.jpg' width="100%" height="650px" /> </a>
          <Carousel.Caption>
            <h3>Third slide label</h3>
          <p>

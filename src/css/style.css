@@ -8,14 +8,14 @@
     text-align: center;
     padding: 20px;
 }
-#cartdata
+/* #cartdata
 {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     width: 90%;
     margin: auto;
-}
+} */
 #tokri
 {
     padding: 3px;
@@ -26,4 +26,11 @@
     font-weight: bold;
     margin-left: 5px;
     border: 1px solid rgb(174, 113, 113);
+}
+#cartdata{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
 }
