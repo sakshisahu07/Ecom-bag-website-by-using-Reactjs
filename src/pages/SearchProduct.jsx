@@ -30,8 +30,8 @@ const SearchProduct=()=>{
         {
             return(
                 <>
-                 <Card style={{ width: '18rem', margin:"auto", margin:"20px" }}>
-    <Card.Img variant="top" src={"public/images/"+key.images} width="100" height="80" />
+                 <Card style={{width:"250px", marginLeft:"10px", marginRight:"10px", marginBottom:"20px"}}>
+    <Card.Img variant="top" src={"public/images/"+key.images} width="100" height="180" />
     <Card.Body>
       <Card.Title>{key.name}</Card.Title>
       <Card.Text>
@@ -55,7 +55,7 @@ const SearchProduct=()=>{
         </center>
         <hr />
 
-        <div id="cartdata"  >
+        <div id="cartdata" style={{display:"flex",justifyContent:"space-between",flexWrap:"wrap", width:"90%",margin:"auto"}} >
         {ans}
         </div>
         </>

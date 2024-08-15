@@ -1,7 +1,7 @@
 
 
 import { createSlice } from "@reduxjs/toolkit";
-// import { message } from "antd";
+import { message } from "antd";
 const cartSlice=createSlice({
     name:"mycart",
     initialState:{
@@ -12,12 +12,12 @@ const cartSlice=createSlice({
          let data=state.cart.filter((item)=>item.id==actions.payload.id);
          if (data.length>=1)
          {
-            alert("Product Already Added!!!");
+            message.success("Product Already Added!!!");
          }
          else 
          {
             state.cart.push(actions.payload);
-            alert("product Added!!!")
+            message.warning("product Added!!!")
          }  
         },
         cartrecDel:(state,actions)=>{
@@ -39,7 +39,7 @@ const cartSlice=createSlice({
                 if(state.cart[i].id==actions.payload)
                 {
                     if(state.cart[i].qnty<=1){
-                        alert("Qnantity not less than 1")
+                        message.error("Qnantity not less than 1")
                     }
                     else{
                     state.cart[i].qnty-=1;

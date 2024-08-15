@@ -6,6 +6,7 @@ import { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useDispatch } from 'react-redux';
 import {addtoCart} from '../CartSlice'
+import { useNavigate } from 'react-router-dom';
 
 const Home=()=>{
     //  ======================== Add To Cart Functionality ============================
@@ -31,14 +32,23 @@ const Home=()=>{
  
    }
 
+   const dataSendCart=(key)=>{
+    navigate ("/productdisplay", {state:key});
+   }
+
 
     const ans=mydata.map((key)=>{
         return(
             <>
-               <Card style={{ width: '18rem', margin:"auto", margin:"20px" }}>
+               <Card style={{width:"250px", marginLeft:"10px", marginRight:"10px", marginBottom:"20px"}}>
     <Card.Img variant="top" src={"public/images/"+key.images} style={{width:"100%",height:"300px"}} />
     <Card.Body>
-      <Card.Title>{key.name}</Card.Title>
+
+      <Card.Title style={{color:"blue", fontSize:"15px"}}
+      onClick={()=>{dataSendCart(key)}}>
+       <a href='#'> {key.name}</a>
+       </Card.Title>
+
       <Card.Text>
        {key.description}
       </Card.Text>
@@ -104,7 +114,7 @@ const Home=()=>{
      </Carousel>
     {/* ================================= Add To Cart ================================== */}
 
-    { <div style={{display:"flex",justifyContent:"space-between",flexWrap:"wrap", width:"90%",margin:"auto"}}>
+    { <div id="cartdata" style={{display:"flex",justifyContent:"space-between",flexWrap:"wrap", width:"90%",margin:"auto"}}>
          {ans}
     </div>   
   }

@@ -23,6 +23,7 @@ const Topmenu=()=>{
             <Nav.Link as={Link} to="home">Home</Nav.Link>
             <Nav.Link as={Link} to="cartproduct">My Cart</Nav.Link>
             <Nav.Link as={Link} to="searchproduct">Search Product</Nav.Link>
+            <Nav.Link as={Link} to="productdisplay"> Product Display</Nav.Link>
            
           </Nav>
           <Nav>

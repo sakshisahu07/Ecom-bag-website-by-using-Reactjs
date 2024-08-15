@@ -4,7 +4,6 @@ import Button from 'react-bootstrap/Button';
 import {cartrecDel,addQnty,DelQnty } from "../CartSlice"
 import { FaPlusCircle } from "react-icons/fa";
 import { FaMinusCircle } from "react-icons/fa";
-
 const CartProduct=()=>{
     const mycart=useSelector((state)=>state.mycart.cart)
     const dispatch = useDispatch();
@@ -34,7 +33,7 @@ const CartProduct=()=>{
                 <td>
                 <a href="#"> 
                 <FaMinusCircle onClick={()=>{qtyDec(key.id)}} />
-            
+                  
                </a>
                    
                    <span style={{paddingLeft:"5px", paddingRight:"5px", fontWeight:"bold"}}> {key.qnty}  </span>
