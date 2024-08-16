@@ -10,10 +10,9 @@ import { useNavigate } from 'react-router-dom';
 
 const Home=()=>{
     //  ======================== Add To Cart Functionality ============================
-
     const [mydata,setMydata]=useState([]);
     const dispatch= useDispatch();
-
+    const navigate=useNavigate();
     const loadData=()=>{
         let api="http://localhost:3000/product";
         axios.get(api).then((res)=>{
@@ -59,8 +58,6 @@ const Home=()=>{
             </>
         )
     })
-
-    
     return(
         <>
           {/* =============================== Carousel =================================== */}
