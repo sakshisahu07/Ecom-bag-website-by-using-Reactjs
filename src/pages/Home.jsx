@@ -24,7 +24,6 @@ const Home=()=>{
         loadData();
     },[])
 
-
     const DataCart=(pid, nm, img, desc, price)=>{
 
       dispatch(addtoCart({id: pid, name:nm, image:img, description:desc,qnty:1, price:price}))
@@ -34,7 +33,6 @@ const Home=()=>{
    const dataSendCart=(key)=>{
     navigate ("/productdisplay", {state:key});
    }
-
 
     const ans=mydata.map((key)=>{
         return(
