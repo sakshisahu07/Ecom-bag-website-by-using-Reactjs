@@ -4,14 +4,14 @@ import Button from 'react-bootstrap/Button';
 import {cartrecDel,addQnty,DelQnty } from "../CartSlice"
 import { FaPlusCircle } from "react-icons/fa";
 import { FaMinusCircle } from "react-icons/fa";
+import { useNavigate } from 'react-router-dom';
 const CartProduct=()=>{
     const mycart=useSelector((state)=>state.mycart.cart)
     const dispatch = useDispatch();
-
+    const navigate =useNavigate();
     const cartRecDel=(id)=>{
         dispatch(cartrecDel(id))
     }
-
 
     const qtyInc=(id)=>{
         dispatch(addQnty(id))
@@ -20,6 +20,12 @@ const CartProduct=()=>{
     const qtyDec=(id)=>{
       dispatch(DelQnty(id))
     }
+
+    const checkOut=()=>{
+      navigate("/checkout");
+    
+    }
+
     let totalAmount=0;
     const ans=mycart.map((key)=>{
         totalAmount+=key.price*key.qnty;
@@ -42,7 +48,6 @@ const CartProduct=()=>{
                   <FaPlusCircle onClick={()=>{qtyInc(key.id)}} />
                   </a>
                   
-                   
                    
                 </td>
                 <td> {key.price*key.qnty} </td>
@@ -79,6 +84,18 @@ const CartProduct=()=>{
             <th></th>
             <th>Total Amount: </th>
             <th>{totalAmount}</th>
+        </tr>
+        <tr>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th>
+
+          <Button variant="primary" onClick={checkOut}>CheckOut</Button>
+
+          </th>
         </tr>
       </tbody>
       </Table>
