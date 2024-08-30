@@ -23,7 +23,7 @@ const App=()=>{
     <Route path="searchproduct" element={<SearchProduct/>}/>
     <Route path="productdisplay" element={<ProductDisplay/>}/>
     <Route path="checkout" element={<CheckOut/>}/>
-    <Route path="paymentcomp" element={<PaymentComplete/>}/>
+    <Route path="paycomp" element={<PaymentComplete/>}/>
 
     </Route>
     </Routes>
